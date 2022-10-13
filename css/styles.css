@@ -8,24 +8,12 @@
   --button-bg-color: #f5f4fa;
   --button-hover-color: #188ce8;
 }
-body {
+body {  
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
 
-.list {
-  list-style: none;
-}
-.link,
-.portfolio-link {
-  text-decoration: none;
-}
-.link:hover,
-.link:focus,
-.nav-link.current {
-  color: var(--accent-color);
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,7 +25,70 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-right: 15px;
+  padding-left: 15px;
+ 
+
+  outline: 2px solid tomato;
+}
+
+.list {
+  list-style: none;
+}
+
+.link,
+.portfolio-link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+/* line header */
+.header {
+border-bottom: 1;
+border-style: solid ;
+border-color: #ECECEC;
+}
+
+.box-header { 
+display: flex; 
+align-items: center;
+}
+
+.page-header {
+ display: flex;
+ align-items: center; 
+}
+
+.site-nav {  
+ display: flex;
+ margin-left: 83px;
+ padding: 0;
+}
+
+.contacts {  
+display: flex;
+margin-left: auto;
+padding: 0;
+}
+
+.site-nav .item + .item,
+.contacts .item + .item  {
+  margin-left: 50px;
+}
+
 /* стилізуєм лого */
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -46,6 +97,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
 .logo-part,
 .part {
   font-family: 'Raleway', sans-serif;
@@ -56,7 +108,9 @@ body {
   color: #000000;
 }
 
+
 /* nav */
+
 
 .nav-link {
   font-weight: 500;
@@ -65,34 +119,44 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.contacts-link {
+
+.contacts-link {  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
 /* hero */
 .hero {
+  
+
   background-color: var(--second-background-color);
+  text-align: center;
 }
 /* hero h1 */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 13.6;
-  text-align: center;
+  line-height: 13.6;  
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-top: 0;
 }
+
 /* button */
 .button.basic {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 216px;
+  
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+ 
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
