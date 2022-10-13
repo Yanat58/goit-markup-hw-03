@@ -11,8 +11,7 @@
 body {  
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
-}
+  background-color: var(--primary-white-color);}
 
 .visually-hidden {
   position: absolute;
@@ -39,6 +38,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -72,14 +73,12 @@ align-items: center;
 
 .site-nav {  
  display: flex;
- margin-left: 83px;
- padding: 0;
+ margin-left: 83px; 
 }
 
 .contacts {  
 display: flex;
 margin-left: auto;
-padding: 0;
 }
 
 .site-nav .item + .item,
@@ -144,6 +143,7 @@ padding: 0;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-top: 0;
+  margin-bottom: 30; 
 }
 
 /* button */
@@ -151,6 +151,7 @@ padding: 0;
   display: inline-block;
   padding: 10px 32px;
   min-width: 216px;
+  border-radius: 4px;
   
   font-family: inherit;
   font-weight: 700;
@@ -164,13 +165,22 @@ padding: 0;
   background-color: var(--accent-color);
   cursor: pointer;
 }
+
 .button.basic:hover,
 .button.basic:focus {
   background-color: var(--button-hover-color);
 }
 /* особливості */
-
+.features-list {
+  display: flex;
+  flex-basis:  calc(100%/4-30px);
+ margin: -15px;
+  
+}
 .features-title {
+ margin-top: 0;
+ margin-bottom: 10px;
+ margin-left: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -179,19 +189,31 @@ padding: 0;
   color: var(--title-text-color);
 }
 .features-text {
+  margin-top: 0;  
+  margin-bottom: 94px;
+  margin-left: 30px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+
+
 /* section gsllery */
 .gallery-title {
+  margin: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.gallery-list {
+  display: flex;
 }
 /* section team */
 .team {
