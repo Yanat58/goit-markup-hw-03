@@ -370,6 +370,13 @@ p {
   background-color: var(--accent-color);
 }
 
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc(100% / 3) ;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
