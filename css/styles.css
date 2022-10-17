@@ -151,9 +151,6 @@ p {
 /* hero */
 
 .hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--second-background-color);
 }
 
@@ -260,9 +257,6 @@ p {
 
 /* section team */
 .team {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--button-bg-color);
 }
 .team-list {
@@ -305,9 +299,6 @@ p {
 /* footer */
 
 .contacts-data {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-background-color);
