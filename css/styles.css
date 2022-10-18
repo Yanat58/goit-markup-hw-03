@@ -149,21 +149,17 @@ p {
 }
 
 /* hero */
+.section.hero {
+padding-top: 200px;
+padding-bottom: 200px;
+}
 
 .hero {
   background-color: var(--second-background-color);
 }
 
 .hero-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-box-wrap {
-  display: block;
-  padding-top: 106px;
-  padding-bottom: 106px;
+  display: block; 
   max-width: 696px;
   text-align: center;
   margin: 0 auto;
